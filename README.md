@@ -29,7 +29,7 @@ This template combines modern UI design, smooth animations, and responsive layou
 
 ## 📸 Preview
 
-![Preview](Images/Preview.png)
+![Preview](Images/preview.png)
 
 ---
 
