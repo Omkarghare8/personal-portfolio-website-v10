@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Creative Developer & Designer specializing in web development, UI/UX design, and 3D animations">
+    <meta name="keywords" content="portfolio, web developer, designer, creative, 3D, animations">
+    <meta name="author" content="Omkar R. Ghare">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Omkar R. Ghare - Creative Developer & Designer">
+    <meta property="og:description" content="Professional Portfolio showcasing creative web development and design work">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Omkar R. Ghare | Creative Developer & Designer Portfolio</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="loading">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-3d">
+                <div class="preloader-cube">
+                    <div class="preloader-cube-face">✦</div>
+                    <div class="preloader-cube-face">❖</div>
+                    <div class="preloader-cube-face">◆</div>
+                    <div class="preloader-cube-face">★</div>
+                    <div class="preloader-cube-face">●</div>
+                    <div class="preloader-cube-face">■</div>
+                </div>
+            </div>
+            <p class="preloader-text">Loading Experience</p>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    
+    <!-- Navigation -->
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="https://www.instagram.com/ogcoderworld" class="nav-logo">OG</a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <path d="M12 7a5 5 0 100 10 5 5 0 000-10zM12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+                    </svg>
+                </button>
+                
+                <a href="#contact" class="nav-cta">Hire Me</a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient-orb"></div>
+            <div class="hero-gradient-orb"></div>
+            <div class="hero-gradient-orb"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Available for Freelance Work
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Hi, I'm</span>
+                    <span class="hero-title-line hero-title-gradient">Omkar Rohidas Ghare</span>
+                    <span class="hero-title-line">Creative Developer</span>
+                </h1>
+                
+                <p class="hero-description">
+                    I craft exceptional digital experiences that combine stunning visuals 
+                    with cutting-edge technology. Let's build something amazing together.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        View My Work
+                        <svg class="btn-icon" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Talk
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="50">50+</div>
+                        <div class="hero-stat-label">Projects Done</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="1">1+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="0">0</div>
+                        <div class="hero-stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-3d-container">
+                    <div class="hero-3d-shape hero-3d-shape-1"></div>
+                    <div class="hero-3d-shape hero-3d-shape-2"></div>
+                    <div class="hero-3d-shape hero-3d-shape-3">
+                        <div class="hero-profile-img">👨‍💻</div>
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="hero-card-icon">🎨</div>
+                        <div class="hero-card-text">
+                            <h4>UI/UX Design</h4>
+                            <p>Creative Solutions</p>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="hero-card-icon">⚡</div>
+                        <div class="hero-card-text">
+                            <h4>Fast Delivery</h4>
+                            <p>On Time, Every Time</p>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="hero-card-icon">🚀</div>
+                        <div class="hero-card-text">
+                            <h4>Modern Tech</h4>
+                            <p>Latest Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="Images/About-Image.jpeg" alt="About Me" loading="lazy">
+                        </div>
+                        <div class="about-floating-badge">
+                            <div class="about-badge-number">1+</div>
+                            <div class="about-badge-text">Years<br>Experience</div>
+                        </div>
+                        <div class="about-floating-badge">
+                            <div class="about-badge-number">50+</div>
+                            <div class="about-badge-text">Projects<br>Completed</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content reveal-right">
+                    <div class="section-tag">✨ About Me</div>
+                    <h2>Passionate Developer Creating Digital Excellence</h2>
+                    <p>
+                        I'm a creative developer and designer based in Pune, India,
+                        specializing in building exceptional digital experiences. With over 
+                        1+ years of experience, I've helped numerous Developers To bring their 
+                        visions to Real.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with creative thinking to 
+                        deliver solutions that not only look stunning but also perform 
+                        flawlessly. I believe in clean code, intuitive design, and 
+                        continuous learning.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">🎯</div>
+                            <div class="about-highlight-text">
+                                <h4>Problem Solver</h4>
+                                <p>Creative solutions</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">💡</div>
+                            <div class="about-highlight-text">
+                                <h4>Innovative</h4>
+                                <p>Fresh ideas</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">🤝</div>
+                            <div class="about-highlight-text">
+                                <h4>Collaborative</h4>
+                                <p>Team player</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">⚡</div>
+                            <div class="about-highlight-text">
+                                <h4>Fast Learner</h4>
+                                <p>Always growing</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://drive.google.com/file/d/1rk2jbLEHRVHdOUKigQ0VXS6Lt_j1-uHX/view?usp=drive_link" class="btn btn-primary">
+                        Download Resume
+                        <svg class="btn-icon" viewBox="0 0 24 24">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">💪 My Skills</div>
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-description">
+                    A comprehensive overview of my technical skills and proficiency 
+                    levels across different technologies and tools.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React/Next.js</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">🎨</div>
+                    <h3>Design & Others</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe XD</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Three.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack reveal">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" title="HTML5">📄</div>
+                    <div class="tech-icon" title="CSS3">🎨</div>
+                    <div class="tech-icon" title="JavaScript">⚡</div>
+                    <div class="tech-icon" title="React">⚛️</div>
+                    <div class="tech-icon" title="Vue">💚</div>
+                    <div class="tech-icon" title="Node.js">🟢</div>
+                    <div class="tech-icon" title="Python">🐍</div>
+                    <div class="tech-icon" title="MongoDB">🍃</div>
+                    <div class="tech-icon" title="Docker">🐳</div>
+                    <div class="tech-icon" title="AWS">☁️</div>
+                    <div class="tech-icon" title="Git">📦</div>
+                    <div class="tech-icon" title="Figma">🎯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">🛠️ Services</div>
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-description">
+                    Comprehensive digital solutions tailored to bring your vision to life 
+                    with excellence and innovation.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <span class="service-number">01</span>
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Creating intuitive and visually stunning interfaces that deliver 
+                        exceptional user experiences across all platforms.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">Wireframing</span>
+                        <span class="service-feature">Prototyping</span>
+                        <span class="service-feature">User Research</span>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <span class="service-number">02</span>
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Building fast, responsive, and scalable web applications using 
+                        modern technologies and best practices.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">React</span>
+                        <span class="service-feature">Next.js</span>
+                        <span class="service-feature">Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <span class="service-number">03</span>
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>
+                        Developing cross-platform mobile applications that provide 
+                        seamless experiences on iOS and Android devices.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">React Native</span>
+                        <span class="service-feature">Flutter</span>
+                        <span class="service-feature">PWA</span>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <span class="service-number">04</span>
+                    <div class="service-icon">🚀</div>
+                    <h3>Performance Optimization</h3>
+                    <p>
+                        Optimizing websites and applications for maximum speed, 
+                        efficiency, and search engine visibility.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">SEO</span>
+                        <span class="service-feature">Core Web Vitals</span>
+                        <span class="service-feature">Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <span class="service-number">05</span>
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>
+                        Deploying and managing cloud infrastructure for reliable, 
+                        scalable, and secure application hosting.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">AWS</span>
+                        <span class="service-feature">Docker</span>
+                        <span class="service-feature">CI/CD</span>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <span class="service-number">06</span>
+                    <div class="service-icon">🤖</div>
+                    <h3>AI Integration</h3>
+                    <p>
+                        Integrating artificial intelligence and machine learning 
+                        capabilities into applications for smarter solutions.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-feature">ChatGPT</span>
+                        <span class="service-feature">ML Models</span>
+                        <span class="service-feature">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">🎯 Portfolio</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Explore my recent work showcasing creative solutions and 
+                    technical excellence across various industries.
+                </p>
+            </div>
+            
+            <div class="portfolio-filter reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-image-placeholder">🌐</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">Node.js</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with payment integration and inventory management.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal" data-category="app">
+                    <div class="portfolio-image" style="background: var(--gradient-2);">
+                        <div class="portfolio-image-placeholder">📱</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React Native</span>
+                            <span class="portfolio-tag">Firebase</span>
+                        </div>
+                        <h3>Fitness Tracking App</h3>
+                        <p>Cross-platform mobile app for tracking workouts, nutrition, and progress.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal" data-category="branding">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <div class="portfolio-image-placeholder">🎨</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Branding</span>
+                            <span class="portfolio-tag">UI Design</span>
+                        </div>
+                        <h3>Tech Startup Branding</h3>
+                        <p>Complete brand identity design including logo, colors, and guidelines.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal" data-category="web">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                        <div class="portfolio-image-placeholder">🏢</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Next.js</span>
+                            <span class="portfolio-tag">Tailwind</span>
+                        </div>
+                        <h3>Corporate Dashboard</h3>
+                        <p>Analytics dashboard with real-time data visualization and reporting tools.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal" data-category="app">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">
+                        <div class="portfolio-image-placeholder">🎵</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Flutter</span>
+                            <span class="portfolio-tag">Dart</span>
+                        </div>
+                        <h3>Music Streaming App</h3>
+                        <p>Feature-rich music player with playlist management and social features.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal" data-category="web">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <div class="portfolio-image-placeholder">🏥</div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-buttons">
+                                <a href="#" class="portfolio-btn" title="View Project">👁️</a>
+                                <a href="#" class="portfolio-btn" title="View Code">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Vue.js</span>
+                            <span class="portfolio-tag">GraphQL</span>
+                        </div>
+                        <h3>Healthcare Platform</h3>
+                        <p>Telemedicine platform connecting patients with healthcare providers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">📚 Experience</div>
+                <h2 class="section-title">My Journey</h2>
+                <p class="section-description">
+                    A timeline of my professional experience and educational background 
+                    that shaped my career.
+                </p>
+            </div>
+            
+            <div class="experience-grid">
+                <div class="experience-column reveal-left">
+                    <h3><span>💼</span> Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Dec-2025 - Present</span>
+                            <div class="timeline-content">
+                                <h4>Senior Creative Developer</h4>
+                                <h5>Tech Innovations Inc.</h5>
+                                <p>Leading development of enterprise-level applications and mentoring junior developers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Feb-2025 - Nov-2025</span>
+                            <div class="timeline-content">
+                                <h4>Full Stack Developer</h4>
+                                <h5>Digital Solutions Co.</h5>
+                                <p>Developed and maintained multiple client projects using React and Node.js.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Sep-2024 - Dec-2024</span>
+                            <div class="timeline-content">
+                                <h4>Frontend Developer</h4>
+                                <h5>StartUp Hub</h5>
+                                <p>Built responsive user interfaces and improved UX for web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-column reveal-right">
+                    <h3><span>🎓</span> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2025</span>
+                            <div class="timeline-content">
+                                <h4>Google UI-UX Certificate</h4>
+                                <h5>Google</h5>
+                                <p>Professional certification in User Experience Design fundamentals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2022 - 2025</span>
+                            <div class="timeline-content">
+                                <h4>B.Voc. In Software Development</h4>
+                                <h5>Prof. Ramkrishna More ACS College, Akurdi</h5>
+                                <p>Graduated with honors, focusing on web technologies and software architecture.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2026</span>
+                            <div class="timeline-content">
+                                <h4>AWS Solutions Architect</h4>
+                                <h5>Amazon Web Services</h5>
+                                <p>Professional certification for designing distributed systems on AWS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">💬 Demo Testimonials</div>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-description">
+                    Hear from the amazing people and companies I've had the pleasure 
+                    to work with.
+                </p>
+            </div>
+            
+            <div class="testimonials-wrapper">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Alex delivered exceptional work on our e-commerce platform. 
+                            The attention to detail and innovative solutions exceeded our expectations."
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👨‍💼</div>
+                            <div class="testimonial-info">
+                                <h4>John Smith</h4>
+                                <p>CEO, Tech Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Working with Alex was a game-changer for our brand. 
+                            The designs are stunning and our conversion rates have doubled!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👩‍💼</div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director, Fashion Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Incredible talent and professionalism. Alex understood our vision 
+                            perfectly and delivered a product that our users love."
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👨‍🔬</div>
+                            <div class="testimonial-info">
+                                <h4>Michael Chen</h4>
+                                <p>Product Manager, SaaS Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "The mobile app Alex built for us is fantastic. 
+                            Fast, intuitive, and exactly what we needed. Highly recommended!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👩‍💻</div>
+                            <div class="testimonial-info">
+                                <h4>Emily Davis</h4>
+                                <p>Founder, Health Tech</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Alex delivered exceptional work on our e-commerce platform. 
+                            The attention to detail and innovative solutions exceeded our expectations."
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👨‍💼</div>
+                            <div class="testimonial-info">
+                                <h4>John Smith</h4>
+                                <p>CEO, Tech Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-rating">
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                            <span>⭐</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Working with Alex was a game-changer for our brand. 
+                            The designs are stunning and our conversion rates have doubled!"
+                        </p>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">👩‍💼</div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director, Fashion Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">📝 Demo Blog</div>
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-description">
+                    Insights, tutorials, and thoughts on web development, design, 
+                    and technology trends.
+                </p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">⚛️</div>
+                        <span class="blog-category">React</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 Jan 15, 2025</span>
+                            <span>⏱️ 5 min read</span>
+                        </div>
+                        <h3>Building Scalable React Applications in 2024</h3>
+                        <p>Learn the latest patterns and best practices for building maintainable React apps.</p>
+                        <a href="#" class="blog-link">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card reveal">
+                    <div class="blog-image" style="background: var(--gradient-1);">
+                        <div class="blog-image-placeholder">🎨</div>
+                        <span class="blog-category">Design</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 Jan 10, 2025</span>
+                            <span>⏱️ 8 min read</span>
+                        </div>
+                        <h3>UI Design Trends That Will Dominate 2024</h3>
+                        <p>Explore the emerging design trends shaping user interfaces this year.</p>
+                        <a href="#" class="blog-link">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card reveal">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                        <div class="blog-image-placeholder">🚀</div>
+                        <span class="blog-category">Performance</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 Jan 5, 2025</span>
+                            <span>⏱️ 6 min read</span>
+                        </div>
+                        <h3>Optimizing Web Performance: A Complete Guide</h3>
+                        <p>Tips and techniques for achieving lightning-fast website performance.</p>
+                        <a href="#" class="blog-link">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">📧 Get In Touch</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind? Let's discuss how we can bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always excited to take on new projects and collaborate with 
+                        amazing people. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <a href="mailto:omkarghare88@gmail.com">omkarghare88@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📱</div>
+                        <div class="contact-item-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+918698093024">+91 8698093024</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-text">
+                            <h4>Location</h4>
+                            <p>Pune, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/omkar-ghare-472a8a277" class="contact-social" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Omkarghare8" class="contact-social" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/omkarghare6600" class="contact-social" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ogcoderworld" class="contact-social" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.779.263-1.618.589-2.277 1.247-.659.659-.985 1.499-1.247 2.277-.267.788-.468 1.658-.527 3.937C.001 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 2.279.261 3.149.527 3.937.262.778.588 1.618 1.247 2.277.659.659 1.499.985 2.277 1.247.788.268 1.658.469 3.937.527 1.28.058 1.687.072 4.947.072s3.667-.015 4.947-.072c2.279-.06 3.149-.261 3.937-.527.778-.262 1.618-.588 2.277-1.247.659-.659.985-1.499 1.247-2.277.268-.788.469-1.658.527-3.937.058-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-2.279-.261-3.149-.527-3.937-.262-.778-.588-1.618-1.247-2.277-.659-.659-1.499-.985-2.277-1.247-.788-.268-1.658-.469-3.937-.527C15.667.015 15.26 0 12 0zm0 2.16c3.203 0 3.585.009 4.849.064 1.17.054 1.805.244 2.227.408.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.354 1.057.408 2.227.055 1.266.064 1.645.064 4.849s-.009 3.585-.064 4.849c-.054 1.17-.244 1.805-.408 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.354-2.227.408-1.266.055-1.645.064-4.849.064s-3.585-.009-4.849-.064c-1.17-.054-1.805-.244-2.227-.408-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.354-1.057-.408-2.227-.055-1.266-.064-1.645-.064-4.849s.009-3.585.064-4.849c.054-1.17.244-1.805.408-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.354 2.227-.408 1.266-.055 1.645-.064 4.849-.064z" />
+                                <circle cx="12" cy="12" r="3.6" />
+                                <circle cx="18.406" cy="5.594" r="0.864" />
+                            </svg>
+                        </a>
+                        <a href="#" class="contact-social" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm8.525 11.465c-.679-.314-2.192-1.037-4.356-1.037-.229 0-.461.014-.689.038 1.211-2.1 2.157-4.867 2.363-6.469 2.221 1.495 3.877 3.818 4.682 6.468zM12 2c3.042 0 5.751 1.766 7.01 4.291-.19 1.508-1.076 4.127-2.236 6.225-.563-.101-1.138-.15-1.725-.15-1.825 0-3.537.463-4.996 1.265.121-.224.238-.453.351-.683.826-1.785 1.433-3.9 1.594-6.239 0-.021.003-.039.003-.062 0-1.156-.937-2.087-2.094-2.087-.577 0-1.095.235-1.474.614-.379-.379-.896-.614-1.475-.614-1.156 0-2.094.931-2.094 2.087 0 .023.003.041.003.062.161 2.339.768 4.454 1.594 6.239.113.23.23.459.351.683-1.459-.802-3.171-1.265-4.996-1.265-.587 0-1.162.049-1.725.15-1.16-2.098-2.046-4.717-2.236-6.225C6.249 3.766 8.958 2 12 2zm-7.734 8.889c.573-.133 1.168-.202 1.775-.202 1.514 0 2.959.343 4.266.925-.108.209-.213.416-.314.626-.863 1.856-1.433 4.019-1.582 6.375-2.283-.676-3.948-2.572-3.948-4.813 0-.564.095-1.107.271-1.625zm5.982 6.389c.141-2.207.699-4.233 1.501-6.028.162.034.328.05.498.05.647 0 1.276-.076 1.885-.222-.169 2.225-.76 4.332-1.66 6.24-1.061-.262-2.004-.805-2.886-1.569l.662.529zm2.983 1.734c-.934-1.919-1.524-4.033-1.68-6.289.926.312 1.896.479 2.891.479 1.049 0 2.066-.182 3.043-.527-.272 2.234-.888 4.338-1.834 6.265-1.009-.277-1.93-.871-2.42-1.928zm4.639-1.029c.896-1.9 1.481-4.004 1.748-6.206 1.867.557 3.462 1.643 4.588 3.085-.843 1.622-2.141 3.003-3.757 3.93-.189.102-.378.196-.579.191zm0 0"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@gmail.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 1234567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <p>✨ I typically respond within 24 hours</p>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <svg class="btn-icon" viewBox="0 0 24 24">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="https://www.instagram.com/ogcoderworld" class="nav-logo">OMKAR GHARE</a>
+                    <p>
+                        Creating exceptional digital experiences that combine creativity 
+                        with cutting-edge technology. Let's build something amazing together.
+                    </p>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/omkar-ghare-472a8a277" class="contact-social" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Omkarghare8" class="contact-social" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/omkarghare6600" class="contact-social" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://dribbble.com/omkar-ghare" class="contact-social" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm8.525 11.465c-.679-.314-2.192-1.037-4.356-1.037-.229 0-.461.014-.689.038 1.211-2.1 2.157-4.867 2.363-6.469 2.221 1.495 3.877 3.818 4.682 6.468zM12 2c3.042 0 5.751 1.766 7.01 4.291-.19 1.508-1.076 4.127-2.236 6.225-.563-.101-1.138-.15-1.725-.15-1.825 0-3.537.463-4.996 1.265.121-.224.238-.453.351-.683.826-1.785 1.433-3.9 1.594-6.239 0-.021.003-.039.003-.062 0-1.156-.937-2.087-2.094-2.087-.577 0-1.095.235-1.474.614-.379-.379-.896-.614-1.475-.614-1.156 0-2.094.931-2.094 2.087 0 .023.003.041.003.062.161 2.339.768 4.454 1.594 6.239.113.23.23.459.351.683-1.459-.802-3.171-1.265-4.996-1.265-.587 0-1.162.049-1.725.15-1.16-2.098-2.046-4.717-2.236-6.225C6.249 3.766 8.958 2 12 2zm-7.734 8.889c.573-.133 1.168-.202 1.775-.202 1.514 0 2.959.343 4.266.925-.108.209-.213.416-.314.626-.863 1.856-1.433 4.019-1.582 6.375-2.283-.676-3.948-2.572-3.948-4.813 0-.564.095-1.107.271-1.625zm5.982 6.389c.141-2.207.699-4.233 1.501-6.028.162.034.328.05.498.05.647 0 1.276-.076 1.885-.222-.169 2.225-.76 4.332-1.66 6.24-1.061-.262-2.004-.805-2.886-1.569l.662.529zm2.983 1.734c-.934-1.919-1.524-4.033-1.68-6.289.926.312 1.896.479 2.891.479 1.049 0 2.066-.182 3.043-.527-.272 2.234-.888 4.338-1.834 6.265-1.009-.277-1.93-.871-2.42-1.928zm4.639-1.029c.896-1.9 1.481-4.004 1.748-6.206 1.867.557 3.462 1.643 4.588 3.085-.843 1.622-2.141 3.003-3.757 3.93-.189.102-.378.196-.579.191zm0 0"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Free Tools</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 OMKAR GHARE. All rights reserved. Crafted & Designed With 💖</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+    
+    
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>
